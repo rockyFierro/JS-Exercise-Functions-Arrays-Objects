@@ -198,7 +198,11 @@ function getCarInfoById(inventory,id) {
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
 function sortCarInventory(inventory) {
-
+	return inventory.sort( (a,b)=>{
+	if(a.car_model > b.car_model) return 1;
+	else if (b.car_model > a.car_model) return -1;
+	else return 0;
+	});
     }   
 
 /**
@@ -211,11 +215,11 @@ function sortCarInventory(inventory) {
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
 function getModelYears(inventory) {
-    let model_years = []
-    for (i=0;i<inventory.length;i++){
-       model_years.push(inventory[i].car_year);
-    }
-    return model_years;
+	let years = []
+	for (i=0; i< inventory.length; i++){
+		years.push(inventory[i].car_year);
+	}
+	return years;
 }
 
 /**
@@ -231,7 +235,12 @@ function getModelYears(inventory) {
  * in the same order as they appear in the original inventory.
 */
 function getOlderCars(inventory,max_year) {
-
+	let olderCars = [];
+	for (i = 0; i < inventory.length; i++){
+		if(inventory[i]['car_year']<= max_year){
+			olderCars.push(inventory[i]);}
+	}
+	return olderCars;
 
 }
 
@@ -247,7 +256,12 @@ function getOlderCars(inventory,max_year) {
  * in the same order as they appear in the original inventory.
 */
 function getGermanCars(inventory) {
-
+	let autos = [];
+	for (i=0; i<inventory.length; i++){
+		if (inventory[i].car_make === 'Audi' || inventory[i].car_make === 'Mercedes-Benz' || inventory[i].car_make === 'Volkswagen' || inventory[i].car_make === 'BMW'){
+		autos.push(inventory[i]);}
+	}
+	return autos;
 }
 
 /**
