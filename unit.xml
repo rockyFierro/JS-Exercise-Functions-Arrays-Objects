@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.022000000000000006" tests="24" failures="5">
+  <testsuite name="Root Suite" timestamp="2020-02-12T23:03:04" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="addNumbers()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.004">
+    <testcase name="addNumbers() can add two numbers" time="0.004" classname="can add two numbers">
+    </testcase>
+  </testsuite>
+  <testsuite name="makePersonObject()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.002">
+    <testcase name="makePersonObject() makes an object of the right shape" time="0.002" classname="makes an object of the right shape">
+    </testcase>
+  </testsuite>
+  <testsuite name="getName()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.003">
+    <testcase name="getName() makes an object of the right shape" time="0.003" classname="makes an object of the right shape">
+    </testcase>
+  </testsuite>
+  <testsuite name="makeSmartPerson()" timestamp="2020-02-12T23:03:04" tests="3" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.001">
+    <testcase name="makeSmartPerson() makes an object with a name" time="0" classname="makes an object with a name">
+    </testcase>
+    <testcase name="makeSmartPerson() makes an object with a functioning sum method" time="0" classname="makes an object with a functioning sum method">
+    </testcase>
+    <testcase name="makeSmartPerson() makes an object with a functioning speak method" time="0.001" classname="makes an object with a functioning speak method">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCarInfoByIndex()" timestamp="2020-02-12T23:03:04" tests="2" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.001">
+    <testcase name="getCarInfoByIndex() returns a string containing the car_make" time="0.001" classname="returns a string containing the car_make">
+    </testcase>
+    <testcase name="getCarInfoByIndex() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+    </testcase>
+  </testsuite>
+  <testsuite name="getLastCarInfo()" timestamp="2020-02-12T23:03:04" tests="2" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.001">
+    <testcase name="getLastCarInfo() returns a string containing the car_make" time="0.001" classname="returns a string containing the car_make">
+    </testcase>
+    <testcase name="getLastCarInfo() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCarInfoById()" timestamp="2020-02-12T23:03:04" tests="2" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0">
+    <testcase name="getCarInfoById() returns a string containing the car_make" time="0" classname="returns a string containing the car_make">
+    </testcase>
+    <testcase name="getCarInfoById() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+    </testcase>
+  </testsuite>
+  <testsuite name="sortCarInventory()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="1" time="0">
+    <testcase name="sortCarInventory() can sort the inventory" time="0" classname="can sort the inventory">
+      <failure message="Cannot read property &apos;length&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'length' of undefined
+    at Context.it (test/index.test.js:154:26)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getModelYears()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0">
+    <testcase name="getModelYears() returns an array of car years" time="0" classname="returns an array of car years">
+    </testcase>
+  </testsuite>
+  <testsuite name="getOlderCars()" timestamp="2020-02-12T23:03:04" tests="3" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="3" time="0.007">
+    <testcase name="getOlderCars() returns an empty array for a very low max year" time="0.002" classname="returns an empty array for a very low max year">
+      <failure message="expected undefined to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal []
+    at Context.it (test/index.test.js:168:43)]]></failure>
+    </testcase>
+    <testcase name="getOlderCars() returns the entire inventory for a very high max year" time="0.004" classname="returns the entire inventory for a very high max year">
+      <failure message="expected undefined to deeply equal [ Array(50) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(50) ]
+    at Context.it (test/index.test.js:172:46)]]></failure>
+    </testcase>
+    <testcase name="getOlderCars() returns some cars when the max year is somewhere in the middle" time="0.001" classname="returns some cars when the max year is somewhere in the middle">
+      <failure message="expected undefined to deeply equal [ Array(7) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(7) ]
+    at Context.it (test/index.test.js:176:46)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getGermanCars()" timestamp="2020-02-12T23:03:04" tests="1" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="1" time="0.001">
+    <testcase name="getGermanCars() returns an array with the correct cars" time="0.001" classname="returns an array with the correct cars">
+      <failure message="expected undefined to deeply equal [ Array(8) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(8) ]
+    at Context.it (test/index.test.js:184:41)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="refactor into arrow functions" timestamp="2020-02-12T23:03:04" tests="3" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.001">
+    <testcase name="refactor into arrow functions sum uses arrow syntax" time="0" classname="sum uses arrow syntax">
+    </testcase>
+    <testcase name="refactor into arrow functions addFive uses arrow syntax" time="0" classname="addFive uses arrow syntax">
+    </testcase>
+    <testcase name="refactor into arrow functions argTimesTwo uses arrow syntax" time="0.001" classname="argTimesTwo uses arrow syntax">
+    </testcase>
+  </testsuite>
+  <testsuite name="carMaker() STRETCH" timestamp="2020-02-12T23:03:04" tests="3" file="/home/rocky/Documents/Lambda/JS-Exercise-Functions-Arrays-Objects/test/index.test.js" failures="0" time="0.001">
+    <testcase name="carMaker() STRETCH makes a car with an odometer set to the correct value" time="0.001" classname="makes a car with an odometer set to the correct value">
+    </testcase>
+    <testcase name="carMaker() STRETCH driving the car increases the odometer" time="0" classname="driving the car increases the odometer">
+    </testcase>
+    <testcase name="carMaker() STRETCH driving the car returns the updated odometer" time="0" classname="driving the car returns the updated odometer">
+    </testcase>
+  </testsuite>
+</testsuites>
